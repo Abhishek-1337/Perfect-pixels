@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --animate-clickBox: clickBox 0.2s ease-in-out;
+    --animate-clickBox2: clickBox2 0.2s ease-in-out;
+    --drop-shadow-assign: 0 8px 15px #141414;
+
+    @keyframes clickBox {
+        0% {
+            outline:3px solid rgba(208, 216, 242, 2);
+        }
+        100% {
+            outline: 1px solid transparent;
+        }
+    }
+
+    @keyframes clickBox2 {
+        0% {
+            outline: 3px solid rgba(208, 216, 242, 1);
+        }
+        100% {
+            outline:1px solid transparent;
+        }
+    }
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    box-sizing: border-box  ;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;    
+}
+
+
+
+
